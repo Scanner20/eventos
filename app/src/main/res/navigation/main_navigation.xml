@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.evento.apptallerautoridad.view.InicioFragment"
+        android:label="inicio_fragment"
+        tools:layout="@layout/inicio_fragment" >
+        <action
+            android:id="@+id/action_inicioFragment_to_agendaFragment"
+            app:destination="@id/agendaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_inicioFragment_to_expositorFragment"
+            app:destination="@id/expositorFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_inicioFragment_to_informacionFragment"
+            app:destination="@id/informacionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/agendaFragment"
+        android:name="com.evento.apptallerautoridad.view.AgendaFragment"
+        android:label="agenda_fragment"
+        tools:layout="@layout/agenda_fragment" >
+        <action
+            android:id="@+id/action_agendaFragment_to_detalleAgendaFragment"
+            app:destination="@id/detalleAgendaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/expositorFragment"
+        android:name="com.evento.apptallerautoridad.view.ExpositorFragment"
+        android:label="expositor_fragment"
+        tools:layout="@layout/expositor_fragment" >
+        <action
+            android:id="@+id/action_expositorFragment_to_detalleExpositorFragment"
+            app:destination="@id/detalleExpositorFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/informacionFragment"
+        android:name="com.evento.apptallerautoridad.view.InformacionFragment"
+        android:label="informacion_fragment"
+        tools:layout="@layout/informacion_fragment" >
+        <action
+            android:id="@+id/action_informacionFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+        <action
+            android:id="@+id/action_informacionFragment_to_lugarTuristicoFragment"
+            app:destination="@id/lugarTuristicoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleExpositorFragment"
+        android:name="com.evento.apptallerautoridad.view.DetalleExpositorFragment"
+        android:label="detalle_expositor_fragment"
+        tools:layout="@layout/detalle_expositor_fragment" />
+    <fragment
+        android:id="@+id/detalleAgendaFragment"
+        android:name="com.evento.apptallerautoridad.view.DetalleAgendaFragment"
+        android:label="detalle_agenda_fragment"
+        tools:layout="@layout/detalle_agenda_fragment" />
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.evento.apptallerautoridad.view.HotelFragment"
+        android:label="hotel_fragment"
+        tools:layout="@layout/hotel_fragment" />
+    <fragment
+        android:id="@+id/lugarTuristicoFragment"
+        android:name="com.evento.apptallerautoridad.view.LugarTuristicoFragment"
+        android:label="lugar_turistico_fragment"
+        tools:layout="@layout/lugar_turistico_fragment" />
+</navigation>
