@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/card_imagen_hotel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/solec_bussines" />
+
+        <TextView
+            android:id="@+id/card_nombre_hotel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/autor_bold"
+            android:text="Solec Business Hotel"
+            android:textColor="@color/redPeru"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/card_estrellas_hotel"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_imagen_hotel" />
+
+        <TextView
+            android:id="@+id/card_direccion_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Federico Villarreal 115, Chiclayo 14009"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_nombre_hotel" />
+
+        <TextView
+            android:id="@+id/card_estrellas_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/autor_medium"
+            android:text="3 Estrellas"
+            android:textColor="@color/colorTertiaryText"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/card_nombre_hotel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_nombre_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/card_imagen_hotel" />
+
+        <TextView
+            android:id="@+id/card_phone_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/autor_medium"
+            android:text="(074) 234-911"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_direccion_hotel" />
+
+        <ImageView
+            android:id="@+id/card_ubicacion_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_ubicacion" />
+
+        <ImageView
+            android:id="@+id/card_web_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/card_ubicacion_hotel"
+            app:srcCompat="@drawable/ic_web" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

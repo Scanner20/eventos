@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: android.arch.navigation:navigation-common:1.0.0-alpha06@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/Desktop/caches/transforms-2/files-2.1/5acd6e33ff1ac96569bc8c2e2cde16ab/jetified-navigation-common-1.0.0-alpha06/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/caches/transforms-2/files-2.1/5acd6e33ff1ac96569bc8c2e2cde16ab/jetified-navigation-common-1.0.0-alpha06/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Desktop/caches/transforms-2/files-2.1/5acd6e33ff1ac96569bc8c2e2cde16ab/jetified-navigation-common-1.0.0-alpha06/res" />
+      <root url="file://$USER_HOME$/Desktop/caches/transforms-2/files-2.1/5acd6e33ff1ac96569bc8c2e2cde16ab/jetified-navigation-common-1.0.0-alpha06/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Desktop/caches/modules-2/files-2.1/android.arch.navigation/navigation-common/1.0.0-alpha06/597d06485a7e54f165f9ece6ebf8dcb6d62109f0/navigation-common-1.0.0-alpha06-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
