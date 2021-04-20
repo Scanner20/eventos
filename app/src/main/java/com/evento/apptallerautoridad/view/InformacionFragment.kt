@@ -79,6 +79,7 @@ class InformacionFragment : Fragment() {
                         .createDestination()
                         .setIntent(Intent(il, MapaActivity::class.java))
                         .navigate(bundle, options, null)
+                // No existe navigate()
             }
 
             btn_lugar_turistico.setOnClickListener {
