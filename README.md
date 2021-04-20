@@ -1,2 +1,2 @@
-# Administracion de eventos  
+# Administración de eventos  
 # TB2
