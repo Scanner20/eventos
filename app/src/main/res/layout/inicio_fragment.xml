@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background_2"
+    tools:context=".view.InicioFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/autor_bold"
+            android:text="@string/titulo_bienvenida"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_texto"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/autor_medium"
+            android:text="Aplicacion Movil"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="26sp"
+            app:autoSizeMinTextSize="16sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_evento"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/txt_evento"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/autor_bold"
+            android:text="MENU DELIVERY"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="60sp"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_svg_logo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_texto" />
+
+        <TextView
+            android:id="@+id/txt_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/autor_medium"
+            android:text="Donde puede pedir lo que usted guste"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="22sp"
+            app:autoSizeMinTextSize="13sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_evento"
+            app:layout_constraintTop_toBottomOf="@+id/txt_evento" />
+
+        <ImageView
+            android:id="@+id/img_svg_logo"
+            android:layout_width="85dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="false"
+            app:layout_constraintBottom_toTopOf="@+id/separator"
+            app:layout_constraintEnd_toStartOf="@+id/txt_evento"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_texto"
+            app:srcCompat="@drawable/ic_logo_foro_pbip" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detalle" />
+
+        <Button
+            android:id="@+id/btn_agenda"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/img_button_agenda"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/autor_bold"
+            android:text="@string/accion_agenda"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+        <Button
+            android:id="@+id/btn_expositores"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:drawableStart="@drawable/img_button_expositores"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/autor_bold"
+            android:text="@string/accion_expositores"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_agenda" />
+
+        <Button
+            android:id="@+id/btn_informacion"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:drawableStart="@drawable/img_button_informacion"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/autor_bold"
+            android:text="@string/accion_informacion"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_expositores" />
+
+        <Button
+            android:id="@+id/btn_grupo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:drawableStart="@drawable/img_button_grupo_whatsapp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/autor_bold"
+            android:text="@string/accion_grupo"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_informacion" />
+
+        <Button
+            android:id="@+id/btn_descargas"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:drawableStart="@drawable/img_button_descargas"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/autor_bold"
+            android:text="@string/accion_descargas"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_grupo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
